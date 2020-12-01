@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\Documents\\GitHub\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj": {}
+    "C:\\Users\\brand\\Documents\\GitHub\\CSE412MainProject\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\Documents\\GitHub\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj": {
+    "C:\\Users\\brand\\Documents\\GitHub\\CSE412MainProject\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\Documents\\GitHub\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\Documents\\GitHub\\CSE412MainProject\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj",
         "projectName": "CSE412Project",
-        "projectPath": "C:\\Users\\brand\\Documents\\GitHub\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj",
+        "projectPath": "C:\\Users\\brand\\Documents\\GitHub\\CSE412MainProject\\CSE412ProjectMain\\CSE412Project\\CSE412Project.csproj",
         "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\Documents\\GitHub\\CSE412ProjectMain\\CSE412Project\\obj\\",
+        "outputPath": "C:\\Users\\brand\\Documents\\GitHub\\CSE412MainProject\\CSE412ProjectMain\\CSE412Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -47,12 +49,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -61,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
