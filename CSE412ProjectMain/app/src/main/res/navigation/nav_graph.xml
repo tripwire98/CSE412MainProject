@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/UserSearchFragment"
+        android:name="com.example.cse412project.UserSearchFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_user_search">
+        <action
+            android:id="@+id/action_UserSearchFragment_to_UserSearchResultsFragment"
+            app:destination="@id/UserSearchResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/UserSearchResultsFragment"
+        android:name="com.example.cse412project.UserSearchResultsFragment"
+        android:label="fragment_search_results"
+        tools:layout="@layout/fragment_user_search_results" />
+
+    <fragment
+        android:id="@+id/UserProfileFragment"
+        android:name="com.example.cse412project.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_friendsList"
+            app:destination="@id/friendsList" />
+        <action
+            android:id="@+id/action_SecondFragment_to_commentsList"
+            app:destination="@id/commentsList" />
+        <action
+            android:id="@+id/action_UserProfileFragment_to_UserSearchFragment"
+            app:destination="@id/UserSearchFragment" />
+        <action
+            android:id="@+id/action_UserProfileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_UserProfileFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.cse412project.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_UserProfileFragment"
+            app:destination="@id/UserProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputCommentFragment"
+        android:name="com.example.cse412project.InputCommentFragment"
+        android:label="fragment_input_comment"
+        tools:layout="@layout/fragment_input_comment" />
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="com.example.cse412project.NewPostFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_new_post">
+    </fragment>
+    <fragment
+        android:id="@+id/friendsList"
+        android:name="com.example.cse412project.FriendsList"
+        android:label="fragment_friends_list_list"
+        tools:layout="@layout/fragment_friends_list_list" />
+    <fragment
+        android:id="@+id/input_FriendRequest"
+        android:name="com.example.cse412project.Input_FriendRequest"
+        android:label="fragment_input__friend_request"
+        tools:layout="@layout/fragment_input__friend_request" />
+    <fragment
+        android:id="@+id/commentsList"
+        android:name="com.example.cse412project.CommentsList"
+        android:label="fragment_comments_list_list"
+        tools:layout="@layout/fragment_comments_list_list" />
+</navigation>
